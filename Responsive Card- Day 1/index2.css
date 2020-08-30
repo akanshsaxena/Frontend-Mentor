@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", Cursive;
+    /* border: purple solid 1px; */
+}
+
+body{
+    background-color: #edf2f8;
+    color: #a6a6a6;
+}
+
+.container{
+    background: white;
+    border-radius: 1.15rem;
+    margin: 25px auto;
+    display: grid;
+    grid-template-areas: 
+        "image heading heading heading"
+        "image para para para"
+        "image pp name .....";
+    width: 1000px;
+    height: auto;
+    grid-gap: 30px;
+}
+
+
+.image{
+    grid-area: image;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 1.15rem 0 0 1.15rem;;
+}
+
+.heading{
+    grid-area: heading;
+    align-self: center;
+}
+
+.para{
+    grid-area: para;
+    width: 90%;
+}
+
+.pp{
+    grid-area: pp;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.name{
+    grid-area: name;
+    align-self: start;
+    justify-self: start;
+    text-align: left;
+}
+
+
+@media(max-width: 750px){
+    .container{
+        grid-template-areas: 
+            "image image image"
+            "image image image"
+            "heading heading heading"
+            "para para para"
+            "pp name ....";
+            width: 450px;
+            height: auto;
+    }
+    .container > *{
+        margin: 0 1.5rem;
+    }
+    .container>:first-child{
+        margin: 0;
+    }
+    .pp{
+        margin-right: 0;
+    }
+    .name{
+        margin-bottom: 1.5rem;   
+    }
+    .image{
+        height: 250px;
+        border-radius: 1.15rem 1.15rem 0 0;
+    }
+}
