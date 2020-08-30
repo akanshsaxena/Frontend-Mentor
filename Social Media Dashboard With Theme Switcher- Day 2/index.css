@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Utilities*/
+:root{
+    --very-dark-blue: hsl(230, 17%, 14%);
+/* - Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%); */
+    --dark-desaturated-blue: hsl(228, 28%, 20%);
+    --desaturated-blue: hsl(228, 34%, 66%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: var(--very-dark-blue);
+    height: 100vh;
+}
+
+.white-color{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.dull-white{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.svg{
+    width: 70%;
+}
+.username{
+    display: inline;
+    font-size: 0.9rem;
+}
+/*container*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/*header*/
+.header{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+/*cards*/
+.cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3.5rem;
+}
+.big-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3rem;
+    background: var(--dark-desaturated-blue);
+    border-top: #4267B2 4px solid;
+}
+
+.big-card>*{
+    padding: 7px 0;
+}
