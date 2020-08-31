@@ -16,14 +16,14 @@
         <h2 id="heading" class="white-color">Social Media Dashboard</h2>
         <p id="total_followers" class="dull-white">Total Followers: 23,004</p>
       </div>
-      <div id="modeDiv">
+      <!-- <div id="modeDiv">
         <p id="mode">Dark Mode</p>
         <input type="checkbox" id="switch" class="checkbox" /> 
         <label for="switch" class="toggle"> <p>ON OFF</p></label>
-      </div>  
+      </div>   -->
   </header>
   <section class="cards">
-    <div class="big-card">
+    <div class="big-card facebook">
       <div class="social">
         <img src="/images/icon-facebook.svg">
         <p class="username dull-white">@nathanf</p>
@@ -32,79 +32,133 @@
       <p class="followers-text dull-white">FOLLOWERS</p>
       <div class="follower-change">
         <img src="/images/icon-up.svg">
-        <p class="follower-increase">12 Today</p>
+        <p class="green">12 Today</p>
       </div>
     </div>
-    <div class="big-card">
+    <div class="big-card twitter">
       <div class="social">
-        <img src="/images/icon-facebook.svg">
+        <img src="/images/icon-twitter.svg">
         <p class="username dull-white">@nathanf</p>
       </div>
-      <h1 class="follower-count white-color">1987</h1>
+      <h1 class="follower-count white-color">1044</h1>
       <p class="followers-text dull-white">FOLLOWERS</p>
       <div class="follower-change">
         <img src="/images/icon-up.svg">
-        <p class="follower-increase">12 Today</p>
-      </div>
-    </div><div class="big-card">
-      <div class="social">
-        <img src="/images/icon-facebook.svg">
-        <p class="username dull-white">@nathanf</p>
-      </div>
-      <h1 class="follower-count white-color">1987</h1>
-      <p class="followers-text dull-white">FOLLOWERS</p>
-      <div class="follower-change">
-        <img src="/images/icon-up.svg">
-        <p class="follower-increase">12 Today</p>
+        <p class="green">99 Today</p>
       </div>
     </div>
-    <div class="big-card">
+    <div class="instagram">
+      <div class="big-card">
+        <div class="social">
+          <img src="/images/icon-instagram.svg">
+          <p class="username dull-white">@nathanf</p>
+        </div>
+        <h1 class="follower-count white-color">11k</h1>
+        <p class="followers-text dull-white">FOLLOWERS</p>
+        <div class="follower-change">
+          <img src="/images/icon-up.svg">
+          <p class="green">1099 Today</p>
+        </div>
+      </div>
+    </div>
+    <div class="big-card youtube">
       <div class="social">
-        <img src="/images/icon-facebook.svg">
+        <img src="/images/icon-youtube.svg">
         <p class="username dull-white">@nathanf</p>
       </div>
-      <h1 class="follower-count white-color">1987</h1>
+      <h1 class="follower-count white-color">8239</h1>
       <p class="followers-text dull-white">FOLLOWERS</p>
       <div class="follower-change">
-        <img src="/images/icon-up.svg">
-        <p class="follower-increase">12 Today</p>
+        <img src="/images/icon-down.svg">
+        <p class="red">144 Today</p>
       </div>
     </div> 
   </section>
-
-    Overview - Today
-
-    Page Views
-    87
-    3%
-
-    Likes
-    52
-    2%
-
-    Likes
-    5462
-    2257%
-
-    Profile Views
-    52k
-    1375%
-
-    Retweets
-    117
-    303%
-
-    Likes
-    507
-    553%
-
-    Likes
-    107
-    19%
-
-    Total Views
-    1407
-    12%
+  <h3 id="overview" class="white-color">Overview - Today</h3>
+  <section class="cards">
+    <div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Page Views</p>
+        <img class="svg" src="/images/icon-facebook.svg">
+        <p class="daily-change white-color">87</p>
+        <div class="change">
+          <img src="/images/icon-up.svg">
+          <p class="green">3%</p>
+        </div>
+      </div>
+    </div>
+    <div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Likes</p>
+        <img class="svg" src="/images/icon-facebook.svg">
+        <p class="daily-change white-color">52</p>
+        <div class="change">
+          <img src="/images/icon-down.svg">
+          <p class="red">2%</p>
+        </div>
+      </div>
+    </div><div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Likes</p>
+        <img class="svg" src="/images/icon-instagram.svg">
+        <p class="daily-change white-color">5462</p>
+        <div class="change">
+          <img src="/images/icon-up.svg">
+          <p class="green">2257%</p>
+        </div>
+      </div>
+    </div><div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Profile Views</p>
+        <img class="svg" src="/images/icon-instagram.svg">
+        <p class="daily-change white-color">52k</p>
+        <div class="change">
+          <img src="/images/icon-up.svg">
+          <p class="green">1375%</p>
+        </div>
+      </div>
+    </div><div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Retweets</p>
+        <img class="svg" src="/images/icon-twitter.svg">
+        <p class="daily-change white-color">117</p>
+        <div class="change">
+          <img src="/images/icon-up.svg">
+          <p class="green">303%</p>
+        </div>
+      </div>
+    </div><div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Likes</p>
+        <img class="svg" src="/images/icon-twitter.svg">
+        <p class="daily-change white-color">507</p>
+        <div class="change">
+          <img src="/images/icon-up.svg">
+          <p class="green">553%</p>
+        </div>
+      </div>
+    </div><div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Likes</p>
+        <img class="svg" src="/images/icon-youtube.svg">
+        <p class="daily-change white-color">107</p>
+        <div class="change">
+          <img src="/images/icon-down.svg">
+          <p class="red">19%</p>
+        </div>
+      </div>
+    </div><div class="small-cards">
+      <div class="card-container">
+        <p class="category dull-white">Total Views</p>
+        <img class="svg" src="/images/icon-youtube.svg">
+        <p class="daily-change white-color">1407</p>
+        <div class="change">
+          <img src="/images/icon-down.svg">
+          <p class="red">12%</p>
+        </div>
+      </div>
+    </div>
+  </section>
   </div>
 </body>
 </html>

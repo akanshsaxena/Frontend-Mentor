@@ -5,7 +5,7 @@
     --very-dark-blue: hsl(230, 17%, 14%);
 /* - Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%); */
     --dark-desaturated-blue: hsl(228, 28%, 20%);
-    --desaturated-blue: hsl(228, 34%, 66%);
+    --desaturated-blue: hsl(228, 24%, 37%);
 }
 
 *{
@@ -28,12 +28,50 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.svg{
-    width: 70%;
+.big-card>*{
+    padding: 7px 0;
+}
+.social img{
+    margin-top: 2px;
 }
 .username{
     display: inline;
     font-size: 0.9rem;
+}
+
+.follower-count{
+    font-size: 2.75rem;
+    padding-bottom: 0;
+}
+
+.followers-text{
+    font-size: 0.75rem;
+    padding-top: 0;
+    letter-spacing: 0.25em;
+}
+
+.green,
+.red{
+    display: inline;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.facebook,
+.twitter{
+    border-top: #4267B2 4px solid;
+}
+
+.youtube{
+    border-top: red 4px solid;
 }
 /*container*/
 .container{
@@ -45,7 +83,6 @@ body{
 /*header*/
 .header{
     display: flex;
-    
     justify-content: space-between;
 }
 
@@ -62,9 +99,65 @@ body{
     align-items: center;
     border-radius: 0.3rem;
     background: var(--dark-desaturated-blue);
-    border-top: #4267B2 4px solid;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.big-card>*{
-    padding: 7px 0;
+.instagram{
+    background: linear-gradient(to right, yellow, rgb(255, 124, 146)); 
+    border-radius: 0.3rem;  
+}
+.instagram .big-card{
+    margin-top: 4px;
+}
+
+/*Small Cards*/
+
+#overview{
+    margin: 20px 0;
+}
+
+.small-cards{
+    background: var(--dark-desaturated-blue);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-container{
+    padding: 15px;
+    display: grid;
+    grid-gap: 1.8rem;
+    align-items: center;
+    grid-template-areas:
+    "category social"
+    "change percent"
+}
+/* .small-cards > *{
+    margin: 4px;
+} */ 
+.category{
+    grid-area: category;
+    font-size: 0.74rem;
+} 
+
+.svg{
+    grid-area: social;
+    justify-self: end;
+}
+
+.daily-change{
+    grid-area: change;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.change{
+    grid-area: percent;
+    justify-self: end;
+}
+
+.big-card:hover,
+.small-cards:hover{
+    transform: scale(1.03);
+    background: var(--desaturated-blue);
 }
