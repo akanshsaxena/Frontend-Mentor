@@ -84,7 +84,6 @@ body{
 }
 /*container*/
 .container{
-    width: 1200px;
     margin: 0 auto;
     padding: 30px;
 }
@@ -99,7 +98,7 @@ body{
 .cards{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 3.5rem;
 }
 .big-card{
@@ -164,7 +163,9 @@ body{
 }
 
 .big-card:hover,
-.small-cards:hover{
+.small-cards:hover,
+.big-card:focus,
+.small-cards:focus{
     transform: scale(1.03);
 }
 
