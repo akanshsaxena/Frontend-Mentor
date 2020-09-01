@@ -6,30 +6,32 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
-  
+  <!-- https://api.tvmaze.com/singlesearch/shows?q=${query}&embed=seasons -->
   <title>Frontend Mentor | [Challenge Name Here]</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
       <div id="headDiv">
-        <h2 id="heading" class="white-color">Social Media Dashboard</h2>
-        <p id="total_followers" class="dull-white">Total Followers: 23,004</p>
+        <h2 id="heading" class="brightText">Social Media Dashboard</h2>
+        <p id="total_followers" class="dullText">Total Followers: 23,004</p>
       </div>
-      <!-- <div id="modeDiv">
-        <p id="mode">Dark Mode</p>
-        <input type="checkbox" id="switch" class="checkbox" /> 
-        <label for="switch" class="toggle"> <p>ON OFF</p></label>
-      </div>   -->
+      <div id="modeDiv">
+        <p id="mode" class="brightText">Dark Mode</p>
+        <label for="switch" class="toggle">
+          <input type="checkbox" id="switch" class="checkbox"> 
+          <span class="button"></span>
+        </label>
+      </div>  
   </header>
   <section class="cards">
     <div class="big-card facebook">
       <div class="social">
         <img src="/images/icon-facebook.svg">
-        <p class="username dull-white">@nathanf</p>
+        <p class="username dullText">@nathanf</p>
       </div>
-      <h1 class="follower-count white-color">1987</h1>
-      <p class="followers-text dull-white">FOLLOWERS</p>
+      <h1 class="follower-count brightText">1987</h1>
+      <p class="followers-text dullText">FOLLOWERS</p>
       <div class="follower-change">
         <img src="/images/icon-up.svg">
         <p class="green">12 Today</p>
@@ -38,10 +40,10 @@
     <div class="big-card twitter">
       <div class="social">
         <img src="/images/icon-twitter.svg">
-        <p class="username dull-white">@nathanf</p>
+        <p class="username dullText">@nathanf</p>
       </div>
-      <h1 class="follower-count white-color">1044</h1>
-      <p class="followers-text dull-white">FOLLOWERS</p>
+      <h1 class="follower-count brightText">1044</h1>
+      <p class="followers-text dullText">FOLLOWERS</p>
       <div class="follower-change">
         <img src="/images/icon-up.svg">
         <p class="green">99 Today</p>
@@ -51,10 +53,10 @@
       <div class="big-card">
         <div class="social">
           <img src="/images/icon-instagram.svg">
-          <p class="username dull-white">@nathanf</p>
+          <p class="username dullText">@nathanf</p>
         </div>
-        <h1 class="follower-count white-color">11k</h1>
-        <p class="followers-text dull-white">FOLLOWERS</p>
+        <h1 class="follower-count brightText">11k</h1>
+        <p class="followers-text dullText">FOLLOWERS</p>
         <div class="follower-change">
           <img src="/images/icon-up.svg">
           <p class="green">1099 Today</p>
@@ -64,23 +66,23 @@
     <div class="big-card youtube">
       <div class="social">
         <img src="/images/icon-youtube.svg">
-        <p class="username dull-white">@nathanf</p>
+        <p class="username dullText">@nathanf</p>
       </div>
-      <h1 class="follower-count white-color">8239</h1>
-      <p class="followers-text dull-white">FOLLOWERS</p>
+      <h1 class="follower-count brightText">8239</h1>
+      <p class="followers-text dullText">FOLLOWERS</p>
       <div class="follower-change">
         <img src="/images/icon-down.svg">
         <p class="red">144 Today</p>
       </div>
     </div> 
   </section>
-  <h3 id="overview" class="white-color">Overview - Today</h3>
+  <h3 id="overview" class="brightText">Overview - Today</h3>
   <section class="cards">
     <div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Page Views</p>
+        <p class="category dullText">Page Views</p>
         <img class="svg" src="/images/icon-facebook.svg">
-        <p class="daily-change white-color">87</p>
+        <p class="daily-change brightText">87</p>
         <div class="change">
           <img src="/images/icon-up.svg">
           <p class="green">3%</p>
@@ -89,9 +91,9 @@
     </div>
     <div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Likes</p>
+        <p class="category dullText">Likes</p>
         <img class="svg" src="/images/icon-facebook.svg">
-        <p class="daily-change white-color">52</p>
+        <p class="daily-change brightText">52</p>
         <div class="change">
           <img src="/images/icon-down.svg">
           <p class="red">2%</p>
@@ -99,9 +101,9 @@
       </div>
     </div><div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Likes</p>
+        <p class="category dullText">Likes</p>
         <img class="svg" src="/images/icon-instagram.svg">
-        <p class="daily-change white-color">5462</p>
+        <p class="daily-change brightText">5462</p>
         <div class="change">
           <img src="/images/icon-up.svg">
           <p class="green">2257%</p>
@@ -109,9 +111,9 @@
       </div>
     </div><div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Profile Views</p>
+        <p class="category dullText">Profile Views</p>
         <img class="svg" src="/images/icon-instagram.svg">
-        <p class="daily-change white-color">52k</p>
+        <p class="daily-change brightText">52k</p>
         <div class="change">
           <img src="/images/icon-up.svg">
           <p class="green">1375%</p>
@@ -119,9 +121,9 @@
       </div>
     </div><div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Retweets</p>
+        <p class="category dullText">Retweets</p>
         <img class="svg" src="/images/icon-twitter.svg">
-        <p class="daily-change white-color">117</p>
+        <p class="daily-change brightText">117</p>
         <div class="change">
           <img src="/images/icon-up.svg">
           <p class="green">303%</p>
@@ -129,9 +131,9 @@
       </div>
     </div><div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Likes</p>
+        <p class="category dullText">Likes</p>
         <img class="svg" src="/images/icon-twitter.svg">
-        <p class="daily-change white-color">507</p>
+        <p class="daily-change brightText">507</p>
         <div class="change">
           <img src="/images/icon-up.svg">
           <p class="green">553%</p>
@@ -139,9 +141,9 @@
       </div>
     </div><div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Likes</p>
+        <p class="category dullText">Likes</p>
         <img class="svg" src="/images/icon-youtube.svg">
-        <p class="daily-change white-color">107</p>
+        <p class="daily-change brightText">107</p>
         <div class="change">
           <img src="/images/icon-down.svg">
           <p class="red">19%</p>
@@ -149,9 +151,9 @@
       </div>
     </div><div class="small-cards">
       <div class="card-container">
-        <p class="category dull-white">Total Views</p>
+        <p class="category dullText">Total Views</p>
         <img class="svg" src="/images/icon-youtube.svg">
-        <p class="daily-change white-color">1407</p>
+        <p class="daily-change brightText">1407</p>
         <div class="change">
           <img src="/images/icon-down.svg">
           <p class="red">12%</p>
@@ -160,5 +162,6 @@
     </div>
   </section>
   </div>
+  <script src="index.js"></script>  
 </body>
 </html>
