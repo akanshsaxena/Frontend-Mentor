@@ -1,8 +1,8 @@
 import React, {Component} from "react"
 import first from "../images/icon-calculator.svg"
-import second from "../images/icon-karma.svg"
-import third from "../images/icon-supervisor.svg"
-import fourth from "../images/icon-team-builder.svg"
+// import second from "../images/icon-karma.svg"
+// import third from "../images/icon-supervisor.svg"
+// import fourth from "../images/icon-team-builder.svg"
 
 class Card extends Component{
     render(props){
@@ -12,7 +12,7 @@ class Card extends Component{
                 <div>
                     <h3 className="bold-text">{this.props.category}</h3>
                     <p className="medium-text">{this.props.desc}</p>
-                    <img src={this.props.imgSrc}></img>
+                    <img src={first}></img>
                 </div>
             </div>
         )

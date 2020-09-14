@@ -49,7 +49,6 @@ body{
 
 .middle{
   align-self: center;
-  background: pink;
 }
 
 .card div{
@@ -89,4 +88,22 @@ body{
 
 #fourth{
   border-top: blue 3px solid;
+}
+@media(max-width:700px){
+  .heading{
+    font-size: 1.75rem;
+  }
+  #para{
+    width: 80%;
+  }
+  .card-container{
+    flex-direction: column;
+  }
+  .medium{
+    display: flex;
+    flex-direction: column;
+  }
+  .medium{
+    align-items: center;
+  }
 }
