@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f8f8f8;
+  text-align: center;
+}
+.bold-text{
+  font-weight: 600;
+}
+.medium-text{
+  font-weight: 400;
+  color: grey;
+}
+.light-text{
+  font-weight: 200;
+}
+.container{
+  margin: 20px auto;
+}
+#para{
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+.heading{
+  font-size: 2.15rem;
+  margin: 0;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  margin: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: -2px 10px 18px -1px rgba(223, 223, 223, 0.62);
+  width:320px;
+}
+
+.middle{
+  align-self: center;
+  background: pink;
+}
+
+.card div{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.card div h3{
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 10px;
+}
+
+.card div p{
+  font-size: 0.9rem;
+  padding: 0 10px;
+  width: 80%;
+  text-align: left;
+}
+
+.card div img{
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+#first{
+  border-top: aqua 3px solid;
+}
+
+#second{
+  border-top: red 3px solid;
+}
+
+#third{
+  border-top: yellow 3px solid;
+}
+
+#fourth{
+  border-top: blue 3px solid;
+}
